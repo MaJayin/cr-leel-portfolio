@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import contactImg from '../assets/img/contact image.jpg';
+import contactImg from '../assets/img/email.jpg';
 
 export const Contacts = () => {
   const form = useRef();

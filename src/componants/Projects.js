@@ -1,7 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
+import projImg1 from "../assets/img/gen-question.jpg";
+import projImg2 from "../assets/img/gen-question-redone.jpg";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 
@@ -10,14 +10,14 @@ export const Project = () => {
 
     const projects = [
         {
-          title: "Business Startup",
-          description: "Design & Development",
+          title: "Yes i quite infact do",
+          description: "test",
           imgUrl: projImg1,
-          githubLink: "https://github.com/your-username/project-1",
+          
         },
         {
-          title: "Business Startup",
-          description: "Design & Development",
+            title: "Yes i quite infact do",
+            description: "test",
           imgUrl: projImg2,
         },
         {
@@ -25,21 +25,7 @@ export const Project = () => {
           description: "Design & Development",
           imgUrl: projImg3,
         },
-        {
-          title: "Business Startup",
-          description: "Design & Development",
-          imgUrl: projImg1,
-        },
-        {
-          title: "Business Startup",
-          description: "Design & Development",
-          imgUrl: projImg2,
-        },
-        {
-          title: "Business Startup",
-          description: "Design & Development",
-          imgUrl: projImg3,
-        },
+       
       ];
 
 
@@ -55,17 +41,17 @@ export const Project = () => {
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
                         <Nav.Link eventKey="first">
-                            Tab 1
+                            About tab
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link eventKey="second">
-                            Tab 2
+                            FAQ'S
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                         <Nav.Link eventKey="third">
-                            Tab 3
+                        Privacy Policy
                         </Nav.Link>
                     </Nav.Item>
                     </Nav>
@@ -87,10 +73,22 @@ export const Project = () => {
 
                         </Tab.Pane>
                         <Tab.Pane eventKey="second">
-                                randome text
+                        <Row>
+                                {
+                                    projects.map((project, index) => {
+                                        return (
+                                            <ProjectCard
+                                             key={index}
+                                             {...project} />
+                                            
+                                            
+                                        )
+                                    })
+                                }
+                            </Row>
                         </Tab.Pane>
                         <Tab.Pane eventKey="third">
-                            randome text
+                        random text  random text random text random text random text random text random textrandom text  random text random text random text random text random text random textrandom text  random text random text random text random text random text random textrandom text  random text random text random text random text random text random textrandom text  random text random text random text random text random text random textrandom text  random text random text random text random text random text random text
                             </Tab.Pane>
                     </Tab.Content>
                     </Tab.Container>

@@ -49,7 +49,7 @@ export const NavBar = () => {
               <div className="social-icon">
                 <a href="#"><img src={navIcon1} alt="" /></a>
                 <a href="#"><img src={navIcon2} alt="" /></a>
-                <a href="https://www.instagram.com/majayin/"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.instagram.com/lifewleel/"><img src={navIcon3} alt="" /></a>
               </div>
               <button className='vvd' onClick={() => window.location.href= ('#contact')}> <span>Let's Connect</span></button>
             </span>
